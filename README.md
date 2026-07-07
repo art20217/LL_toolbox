@@ -1,6 +1,6 @@
 # 機械工程工具箱 ME Engineering Toolbox
 
-機械工程 Web 工具的入口網站，部署於 <https://art20217.github.io/>。
+機械工程 Web 工具的入口網站，部署於 <https://art20217.github.io/LL_toolbox/>。。
 
 純靜態網站（HTML／CSS／JS），無建置流程；唯一外部資源為 Google Fonts 的 Noto Sans TC 字型。
 
