@@ -9,7 +9,7 @@
 | 工具 | 說明 | 網址 |
 |---|---|---|
 | 車床主軸馬達選型工具 | AC 主軸馬達＋四檔齒輪變速箱選型計算 | <https://art20217.github.io/lathe_motor_selector/> |
-| 容積式潤滑系統計算器 | 潤滑點油量估算與分配器編組 | <https://ll-rd-a392c.web.app> |
+| 容積式潤滑系統計算器 | 潤滑點油量估算與分配器編組 | <https://ll-rd-app.web.app> |
 | 幾何公差查詢器 | 幾何公差推薦與 CNS／ISO 公差表查詢 | <https://art20217.github.io/Geom_Tol_App/> |
 | DiffSheet 資料比對工具 | 試算表差異比對 | <https://art20217.github.io/diffsheet/> |
 
