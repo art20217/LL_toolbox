@@ -24,6 +24,11 @@
           <span class="brand-subtitle">ME Engineering Toolbox</span>
         </span>
       </a>
+      <button id="sidebar-toggle" type="button" class="sidebar-toggle-btn" hidden aria-label="開啟側邊欄" title="開啟側邊欄">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
       <div class="header-actions">
         <div class="search-box">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
@@ -40,6 +45,11 @@
             <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/>
           </svg>
         </button>
+        <button id="feedback-btn" type="button" aria-label="意見回饋" title="意見回饋">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </button>
       </div>
     </div>
   </header>
@@ -49,6 +59,39 @@
     <div id="tool-sections"></div>
     <p id="no-results" class="no-results" hidden>找不到符合「<span id="no-results-term"></span>」的工具。</p>
   </main>
+
+  <div id="tool-view" class="tool-view" hidden>
+    <aside id="sidebar" class="sidebar">
+      <div class="sidebar-header">
+        <button id="sidebar-back" type="button" class="sidebar-back-btn" title="回首頁">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="16" height="16">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          回首頁
+        </button>
+        <button id="sidebar-collapse" type="button" class="sidebar-collapse-btn" aria-label="收合側邊欄" title="收合側邊欄">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M15 18l-6-6 6-6"/>
+          </svg>
+        </button>
+      </div>
+      <nav id="sidebar-nav" class="sidebar-nav"></nav>
+    </aside>
+    <div class="tool-iframe-wrap">
+      <iframe id="tool-iframe" class="tool-iframe" title="工具內容"></iframe>
+    </div>
+  </div>
+
+  <div id="feedback-modal" class="modal-overlay" hidden>
+    <div class="modal-content feedback-modal-content">
+      <button id="feedback-close" type="button" class="modal-close-btn" aria-label="關閉">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+      <iframe class="feedback-iframe" src="about:blank" title="意見回饋表單"></iframe>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container">
