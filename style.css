@@ -81,8 +81,7 @@ a { color: var(--accent); }
   align-items: center;
   gap: 16px;
   flex-wrap: wrap;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 20px;
 }
 
 .brand {
