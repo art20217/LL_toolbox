@@ -34,7 +34,7 @@ const TOOLS = [
       '潤滑點油量估算、分配器編組與規格代碼計算，並驗證升壓時間、循環時間等系統參數，' +
       '支援軸承、滑軌、齒輪、鍊條等多種元件類型。',
     category: 'sizing',
-    url: 'https://ll-rd-a392c.web.app',
+    url: 'https://ll-rd-app.web.app',
     keywords: ['潤滑', '油量', '分配器', 'lubrication', 'oil', '軸承', '滑軌'],
     status: 'live',
     icon: `
