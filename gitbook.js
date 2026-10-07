@@ -6,6 +6,7 @@
  *
  * 面板內可用的分頁（assistant／search／docs）取決於 GitBook 站台本身的設定，
  * 其中 Assistant 需較高方案；此處刻意不覆寫 tabs，直接沿用站台設定。
+ * 本站台目前實際提供搜尋與文件兩個分頁，Assistant 未開放。
  */
 (function initGitBookEmbed() {
   const SITE_URL = 'https://xie-fu-jisorganization.gitbook.io/xie-fu-jisorganization-docs';
@@ -15,14 +16,6 @@
 
   const CONFIG = {
     button: { label: '查手冊', icon: 'book' }, // icon 僅接受 assistant｜sparkle｜help｜book
-    greeting: { title: '研發部工作手冊', subtitle: '想查什麼規範或流程？' },
-    assistantName: '手冊助理',
-    suggestions: [
-      '螺紋孔的標註格式',
-      '圖面審查要檢查哪些項目',
-      '幾何公差字高比例異常怎麼處理',
-      'OV 件的發行流程',
-    ],
     actions: [
       {
         icon: 'arrow-up-right-from-square', // 可用任何 FontAwesome 圖示名稱
@@ -31,8 +24,20 @@
       },
     ],
     closeButton: true,
-    // tabs: ['search', 'docs'],  // 要限制分頁時取消註解
+    // tabs: ['search', 'docs'],  // 省略＝沿用站台設定，日後開放 Assistant 會自動出現
     // trademark: false,          // 要隱藏 GitBook 品牌標示時取消註解
+
+    /* 以下三項僅在 Assistant（AI 助理）分頁內生效，本站台方案尚未開放該分頁
+       （面板目前只有搜尋與文件），故保留為註解；升級方案後可直接啟用。
+    greeting: { title: '研發部工作手冊', subtitle: '想查什麼規範或流程？' },
+    assistantName: '手冊助理',
+    suggestions: [
+      '螺紋孔的標註格式',
+      '圖面審查要檢查哪些項目',
+      '幾何公差字高比例異常怎麼處理',
+      'OV 件的發行流程',
+    ],
+    */
   };
 
   /* 目前生效的主題：未手動指定時跟隨系統，與 app.js 的切換邏輯一致 */
