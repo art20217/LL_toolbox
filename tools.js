@@ -1,6 +1,10 @@
 // 工具資料檔：新增工具時只需要在 TOOLS 加一筆（必要時在 CATEGORIES 加分類）。
 // status: 'live' = 已上線；'soon' = 即將推出（卡片不可點、顯示徽章）。
 
+// 工作手冊 AI 問答（Cloudflare Worker，需公司 email 登入）。
+// 部署完成前保持空字串，頁首按鈕不會顯示；填入 Worker 網址後即在新分頁開啟。
+const MANUAL_AI_URL = '';
+
 const CATEGORIES = [
   { id: 'sizing', name: '選型與計算' },
   { id: 'lookup', name: '查表工具' },

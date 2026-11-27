@@ -15,6 +15,14 @@ document.getElementById('theme-toggle').addEventListener('click', () => {
   localStorage.setItem('toolbox-theme', next);
 });
 
+/* 工作手冊 AI 問答入口：tools.js 的 MANUAL_AI_URL 有值才顯示 */
+(function initManualAiLink() {
+  const link = document.getElementById('manual-ai-link');
+  if (!link || typeof MANUAL_AI_URL !== 'string' || !/^https:\/\//.test(MANUAL_AI_URL)) return;
+  link.href = MANUAL_AI_URL;
+  link.hidden = false;
+})();
+
 /* Header 高度追蹤 */
 (function trackHeaderHeight() {
   const header = document.querySelector('.site-header');

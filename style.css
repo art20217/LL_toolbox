@@ -140,6 +140,32 @@ a { color: var(--accent); }
   box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
+/* 工作手冊 AI 問答入口（新分頁開啟 Worker 聊天頁） */
+.manual-ai-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: background 0.15s;
+}
+.manual-ai-link[hidden] { display: none; }
+.manual-ai-link:hover { background: var(--accent); color: #fff; }
+.manual-ai-link svg { width: 18px; height: 18px; }
+@media (max-width: 560px) {
+  .manual-ai-link { padding: 0; width: 38px; justify-content: center; }
+  .manual-ai-link span { display: none; }
+}
+
 #theme-toggle {
   display: grid;
   place-items: center;
